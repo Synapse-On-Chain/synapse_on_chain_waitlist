@@ -2,9 +2,9 @@
   command = "npm install"
 
 [functions]
-  directory = "netlify/functions"
+  directory = "pxxl/functions"
 
 [[redirects]]
   from = "/waitlist"
-  to = "/.netlify/functions/server"
+  to = "/.pxxl/functions/server"
   status = 301

@@ -1,8 +1,8 @@
 ```markdown
 # Synapse On-Chain Waitlist 🚀
 
-This repository contains the **waitlist application** for **Synapse Academy**, a learn-to-earn blockchain platform.  
-The waitlist allows users to sign up with their email and get notified when Synapse Academy launches.  
+This repository contains the **waitlist application** for **Synapse On-Chain**, a learn-to-earn blockchain platform.  
+The waitlist allows users to sign up with their email and get notified when Synapse On-Chain launches.  
 
 ## ✨ Features
 
@@ -10,7 +10,7 @@ The waitlist allows users to sign up with their email and get notified when Syna
 - 🔐 Secure data storage using [Supabase](https://supabase.com).  
 - ⚡ Serverless backend powered by Express + Netlify Functions.  
 - 🎨 Responsive frontend built with Tailwind CSS.  
-- 🔗 Integrated with Synapse Academy branding.  
+- 🔗 Integrated with Synapse On-Chain branding.  
 
 ---
 

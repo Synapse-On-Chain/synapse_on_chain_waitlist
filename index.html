@@ -249,7 +249,7 @@
         messageEl.classList.add("text-gray-400");
 
         try {
-          const res = await fetch("/.pxxl/functions/server", {
+          const res = await fetch("https://synapse-waitlist-backend.pxxl.click/server", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ email }),

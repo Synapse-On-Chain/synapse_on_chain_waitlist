@@ -50,6 +50,6 @@ router.post("/", async (req, res) => {
 });
 
 // 🔑 Mount router on the Netlify functions base path
-app.use("https://synapse-waitlist.pxxl.click/server", router);
+app.use("/server", router);
 
 module.exports.handler = serverless(app);

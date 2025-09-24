@@ -2,10 +2,8 @@ const express = require("express");
 const cors = require("cors");
 const { createClient } = require("@supabase/supabase-js");
 require("dotenv").config();
-const serverless = require("serverless-http");
 
 const app = express();
-const router = express.Router();
 
 const allowedOrigins = ["https://synapse-waitlist.pxxl.click"];
 
@@ -32,8 +30,8 @@ const supabase = createClient(
   process.env.SUPABASE_ANON_KEY
 );
 
-// 🚀 IMPORTANT: mount route on router, not directly on app
-router.post("/", async (req, res) => {
+// 🚀 POST route
+app.post("/server", async (req, res) => {
   const { email } = req.body;
 
   if (!email) {
@@ -49,7 +47,8 @@ router.post("/", async (req, res) => {
   res.json({ message: "Subscription successful!" });
 });
 
-// 🔑 Mount router on the Netlify functions base path
-app.use("/server", router);
-
-module.exports.handler = serverless(app);
+// ✅ Start hosted server
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});

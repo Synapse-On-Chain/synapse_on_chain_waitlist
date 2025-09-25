@@ -7,8 +7,8 @@ const app = express();
 
 // Add both domains here
 const allowedOrigins = [
-  "https://synapseonchain.xyz",
-  "http://synapse-waitlist.pxxl.click" // ✅ newly added
+  "https://synapseonchain.xyz/",
+  "https://synapse-waitlist.pxxl.click/" // ✅ newly added
 ];
 
 // Apply CORS middleware

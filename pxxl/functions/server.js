@@ -5,7 +5,7 @@ require("dotenv").config();
 
 const app = express();
 
-const allowedOrigins = ["https://synapse-waitlist.pxxl.click"];
+const allowedOrigins = ["https://synapseonchain.xyz"];
 
 // Apply CORS middleware
 app.use(

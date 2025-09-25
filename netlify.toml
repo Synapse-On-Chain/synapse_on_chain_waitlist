@@ -1,0 +1,10 @@
+[build]
+  command = "npm install"
+
+[functions]
+  directory = "pxxl/functions"
+
+[[redirects]]
+  from = "/waitlist"
+  to = "/.pxxl/functions/server"
+  status = 301

@@ -5,7 +5,11 @@ require("dotenv").config();
 
 const app = express();
 
-const allowedOrigins = ["https://synapseonchain.xyz"];
+// Add both domains here
+const allowedOrigins = [
+  "https://synapseonchain.xyz",
+  "http://synapse-waitlist.pxxl.click" // ✅ newly added
+];
 
 // Apply CORS middleware
 app.use(
